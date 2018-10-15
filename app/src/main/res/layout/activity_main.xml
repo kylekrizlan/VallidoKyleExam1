@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/AppTheme"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="173dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Hay Brown Chair"
+        android:textAppearance="@android:style/TextAppearance.Material.Body1"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:theme="@style/Header"
+        app:fontFamily="sans-serif"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.958"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.016" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="125dp"
+        android:layout_height="65dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="showBack"
+        android:theme="@style/Buttons"
+        android:text="@string/back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.98" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="125dp"
+        android:layout_height="64dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="showNext"
+        android:text="@string/next"
+        android:theme="@style/Buttons"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.98" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="190dp"
+        android:layout_height="204dp"
+        android:layout_marginEnd="188dp"
+        android:layout_marginRight="188dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/hc"
+        tools:layout_editor_absoluteY="4dp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="41dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:srcCompat="@drawable/m"
+        tools:layout_editor_absoluteX="69dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="158dp"
+        android:layout_height="43dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:text="Price: $ 218"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:fontFamily="sans-serif"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintStart_toEndOf="@+id/imageView2" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="38dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:srcCompat="@drawable/s"
+        tools:layout_editor_absoluteX="69dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="Shipping Fee: $ 10"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:fontFamily="sans-serif"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="138dp"
+        android:layout_height="33dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:text="       On Sale!"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="38dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:srcCompat="@drawable/l"
+        tools:layout_editor_absoluteX="69dp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="Promo runs from Oct. 15- 20, 2018"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:fontFamily="sans-serif"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="52dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="12dp"
+        android:text="Buy"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="68dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:srcCompat="@drawable/u"
+        tools:layout_editor_absoluteX="58dp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginTop="44dp"
+        android:text="Tel: 09068114265"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:fontFamily="sans-serif"
+        app:layout_constraintStart_toEndOf="@+id/imageView5"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+</android.support.constraint.ConstraintLayout>
